@@ -1,0 +1,67 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="de.tinf15b4.ihatestau.ihatestau_androidapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".app.AndroidApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="ENTER_UR_API_KEY_HERE"/>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".activities.OverviewActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.CameraListActivity"
+            android:label="@string/activity_title_camera_list">
+        </activity>
+
+        <activity
+            android:name=".activities.AddCameraActivity"
+            android:label="@string/activity_title_add_camera"
+            android:parentActivityName=".activities.OverviewActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.tinf15b4.ihatestau.ihatestau_androidapp.activities.OverviewActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.MapActivity"
+            android:label="@string/activity_title_map">
+        </activity>
+
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:label="@string/activity_title_settings">
+        </activity>
+
+        <service
+        android:name=".services.GeofenceRegistrationService"
+        android:enabled="true"
+        android:exported="false" />
+
+
+        <service android:name=".services.GeofenceService"
+        android:exported="false" />
+
+    </application>
+
+</manifest>

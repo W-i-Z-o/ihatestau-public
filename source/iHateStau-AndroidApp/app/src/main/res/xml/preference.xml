@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:title="@string/preference_geofence_radius_in_meters_title"
+        android:key="@string/preference_geofence_radius_in_meters_key"
+        android:defaultValue="@string/preference_geofence_radius_in_meters_default"
+        android:inputType="number" />
+
+    <EditTextPreference
+        android:title="@string/preference_geofence_intervall_in_milliseconds_title"
+        android:key="@string/preference_geofence_intervall_in_milliseconds_key"
+        android:defaultValue="@string/preference_geofence_intervall_in_milliseconds_default"
+        android:inputType="number" />
+
+    <SwitchPreference
+        android:title="@string/preference_fancy_color_mode_title"
+        android:key="@string/preference_fancy_color_mode_key"
+        android:defaultValue="@string/preference_fancy_color_mode_default"
+        android:summaryOn="@string/activated"
+        android:summaryOff="@string/deactivated" />
+
+</PreferenceScreen>

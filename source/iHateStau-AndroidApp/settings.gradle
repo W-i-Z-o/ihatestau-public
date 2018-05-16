@@ -1,0 +1,3 @@
+include ':app'
+include ':iHateStau-commons'
+project(':iHateStau-commons').projectDir = new File(settingsDir, '../iHateStau-commons')

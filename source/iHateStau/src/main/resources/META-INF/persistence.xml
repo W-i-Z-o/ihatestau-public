@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="production" transaction-type="RESOURCE_LOCAL">
+    
+        <class>de.tinf15b4.ihatestau.persistence.CameraSpotConfigEntity</class>
+        <class>de.tinf15b4.ihatestau.persistence.ExitSpotConfigEntity</class>
+        <class>de.tinf15b4.ihatestau.persistence.CameraSpotTrafficStateEntity</class>
+        <class>de.tinf15b4.ihatestau.persistence.TrafficStateId</class>
+
+        <properties>
+            <property name="hibernate.show_sql" value="false"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.connection.driver_class" value="org.h2.Driver"/>
+            <property name="hibernate.connection.url" value="jdbc:h2:file:~/ihatestau_db/ihatestau"/>
+            <property name="hibernate.connection.username" value="sa"/>
+            <property name="hibernate.connection.password" value="sa"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+        </properties>
+    </persistence-unit>
+    
+    <persistence-unit name="testing" transaction-type="RESOURCE_LOCAL">
+
+        <class>de.tinf15b4.ihatestau.persistence.TestEntity</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+        <properties>
+            <property name="hibernate.show_sql" value="false"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.connection.driver_class" value="org.h2.Driver"/>
+            <property name="hibernate.connection.url" value="jdbc:h2:file:~/ihatestau_db/ihatestau_test"/>
+            <property name="hibernate.connection.username" value="sa"/>
+            <property name="hibernate.connection.password" value="sa"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.HSQLDialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+        </properties>
+    </persistence-unit>
+</persistence>

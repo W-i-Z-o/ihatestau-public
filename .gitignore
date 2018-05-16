@@ -1,0 +1,13 @@
+*.iml
+source/verkehrscam-scraper/target
+.idea
+
+source/**/target/
+
+source/**/build/
+source/**/bin/
+source/**/.settings/
+source/**/*.classpath
+source/**/*.project
+__pycache__
+*.log

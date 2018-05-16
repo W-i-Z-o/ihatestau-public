@@ -1,0 +1,86 @@
+[
+	{
+		"id": "81ddd94e-9fcf-4668-9ea9-36d1485dfd59",
+		"name": "Bruchsal",
+		"exitLat": "49.147965",
+		"exitLon": "8.559987",
+		"street": "70ee0574-289a-4331-90e8-cbfa1c3a798e"
+	},
+	{
+		"id": "e78f58b2-58fc-4a49-8aed-c6aab16a2cab",
+		"name": "Karlsruhe Nord",
+		"exitLat": "49.016032",
+		"exitLon": "8.466818",
+		"street": "70ee0574-289a-4331-90e8-cbfa1c3a798e"
+	},
+	{
+		"id": "e5d5fc06-244c-46ea-85b2-a6a320872d4f",
+		"name": "Karlsruhe Durlach",
+		"exitLat": "49.002846",
+		"exitLon": "8.450480",
+		"street": "70ee0574-289a-4331-90e8-cbfa1c3a798e"
+	},
+	{
+		"id": "2bba46c1-0000-46bd-966f-848c178aa601",
+		"name": "Karlsruhe Mitte",
+		"exitLat": "48.990827",
+		"exitLon": "8.436220",
+		"street": "70ee0574-289a-4331-90e8-cbfa1c3a798e"
+	},
+	{
+		"id": "3e11f2d2-1a22-4fc1-ad3b-4066bc685f07",
+		"name": "Ettlingen",
+		"exitLat": "48.961049",
+		"exitLon": "8.408481",
+		"street": "70ee0574-289a-4331-90e8-cbfa1c3a798e"
+	},
+	{
+		"id": "237aa6c7-76f1-407d-bea6-1edb4c8e76f6",
+		"name": "Rust",
+		"exitLat": "48.253598",
+		"exitLon": "7.761987",
+		"street": "70ee0574-289a-4331-90e8-cbfa1c3a798e"
+	},
+	{
+		"id": "3b391188-93c3-4e86-8813-a60bc9f54183",
+		"name": "Kronau",
+		"exitLat": "49.226844",
+		"exitLon": "8.603262",
+		"street": "70ee0574-289a-4331-90e8-cbfa1c3a798e"
+	},
+	{
+		"id": "f81d8e58-6217-4551-99e5-292c292a24ee",
+		"name": "Karlsbad",
+		"exitLat": "48.945694",
+		"exitLon": "8.494878",
+		"street": "de07c555-8a51-40cd-8ddb-dbc90cab9c03"
+	},
+	{
+		"id": "b3783ebd-3650-4fb2-a769-20528ce554bf",
+		"name": "Karlsruhe Süd",
+		"exitLat": "48.956753",
+		"exitLon": "8.383364",
+		"street": "70ee0574-289a-4331-90e8-cbfa1c3a798e"
+	},
+	{
+		"id": "56e14d1e-0180-411b-b5d2-139d4ae4feb9",
+		"name": "Rastatt Nord",
+		"exitLat": "48.864817",
+		"exitLon": "8.247948",
+		"street": "70ee0574-289a-4331-90e8-cbfa1c3a798e"
+	},
+	{
+		"id": "9efd4b83-71ca-4dba-8a5c-7c14117e504d",
+		"name": "Herbolzheim",
+		"exitLat": "48.229280",
+		"exitLon": "7.750123",
+		"street": "70ee0574-289a-4331-90e8-cbfa1c3a798e"
+	},
+	{
+		"id": "2003afd7-803c-4fe0-a330-4a4821e04267",
+		"name": "Ettenheim",
+		"exitLat": "48.279760",
+		"exitLon": "7.782067",
+		"street": "70ee0574-289a-4331-90e8-cbfa1c3a798e"
+	}
+]

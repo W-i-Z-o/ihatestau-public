@@ -1,0 +1,29 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'de.tinf15b4.ihatestau'
+version = '1.0-SNAPSHOT'
+
+description = """iHateStau-commons"""
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
+}
+
+
+
+repositories {
+        
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    compile group: 'org.glassfish.jersey.core', name: 'jersey-client', version:'2.26'
+    compile group: 'org.glassfish.jersey.media', name: 'jersey-media-multipart', version:'2.26'
+    compile group: 'org.glassfish.jersey.media', name: 'jersey-media-json-jackson', version:'2.26'
+    compile group: 'org.glassfish.jersey.inject', name: 'jersey-hk2', version:'2.26'
+    compile group: 'ch.qos.logback', name: 'logback-classic', version:'1.2.2'
+    compile group: 'com.google.guava', name: 'guava', version:'23.1-jre'
+    testCompile group: 'junit', name: 'junit', version:'4.9'
+}

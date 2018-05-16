@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".activities.AddCameraActivity">
+
+    <TextView
+        android:id="@+id/textview_add_camera_selected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="@dimen/font_size_large"/>
+
+    <TextView
+        android:id="@+id/textview_add_camera_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_camera_info"
+        android:paddingTop="@dimen/activity_vertical_margin"/>
+
+    <ListView
+        android:id="@+id/listview_add_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:verticalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        android:paddingTop="@dimen/activity_vertical_margin"/>
+
+    <Button
+        android:id="@+id/button_add_camera_focus_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_add_camera_focus_camera" />
+
+    <Button
+        android:id="@+id/button_add_camera_preselected_spot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_add_camera_preselected_spot"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/textview_add_camera_location_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_camera_location_label"
+        android:textStyle="bold"
+        android:paddingTop="@dimen/activity_vertical_margin" />
+
+    <TextView
+        android:id="@+id/textview_add_camera_picked_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:paddingTop="@dimen/activity_vertical_margin" />
+
+    <Button
+        android:id="@+id/button_add_camera_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_camera_button"
+        android:enabled="false"
+        android:layout_marginTop="@dimen/activity_vertical_margin" />
+
+</LinearLayout>
