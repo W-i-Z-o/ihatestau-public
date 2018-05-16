@@ -1,6 +1,6 @@
 # iHateStau
 
-## Disclaimer: This was a student project. Due to pragmatism and pressure of time some components may not be as beautiful as they are supposed to be...
+## Disclaimer: This was a student project. Due to pragmatism and pressure of time some components may not are as beautiful as they are supposed to be...
 Feel free to make them beautiful again!
 
 For praise or donations feel free to contact us at iHateStau@gmx.de
