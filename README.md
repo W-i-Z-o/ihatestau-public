@@ -14,7 +14,6 @@ Zum einfachen Deployment des Backends haben wir ein [Docker-Image](https://hub.d
 Es dauert etwa eine halbe Minute, bis der Server gestart und die Status-Seite unter [localhost:8080/ihatestau/info/html](http://localhost:8080/ihatestau/info/html) erreichbar ist, und weitere 1 bis 2 Minuten, bis die ersten Bilder geladen wurden.
 
 ## How-to: Build and deploy
-0. Optional: Besseres neuronales Netz einbinden (ist zu groß für GitHub): [Hier herunterladen](https://mega.nz/#!tFE2SI4R!5PUA6G_151mYHQRjni1fDsPlWiAhxHuBN8qF73Dx8eU) und das Verzeichnis `source/neural-net-server/model` ersetzen
 1. source/neural-net-server/serve.py starten 
 2. Im Source Verzeichnis bash öffnen
 3. mvn clean install -f iHateStau-parent/pom.xml
