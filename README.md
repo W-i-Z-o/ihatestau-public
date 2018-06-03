@@ -5,6 +5,14 @@ Feel free to make them beautiful again!
 
 For praise or donations feel free to contact us at iHateStau@gmx.de
 
+## How-To: Backend deployen mit Docker
+
+Zum einfachen Deployment des Backends haben wir ein [Docker-Image](https://hub.docker.com/r/tinf15b4ihatestau/ihatestau-backend/) gebaut, das fertig vorkonfiguriert ist und alle Teile des Backends beinhaltet. Mit dem folgenden Befehl wird das Image heruntergeladen und gestartet:
+
+    docker run -d -p 8080:8080 tinf15b4ihatestau/ihatestau-backend
+  
+Es dauert etwa eine halbe Minute, bis der Server gestart und die Status-Seite unter [localhost:8080/ihatestau/info/html](http://localhost:8080/ihatestau/info/html) erreichbar ist, und weitere 1 bis 2 Minuten, bis die ersten Bilder geladen wurden.
+
 ## How-to: Build and deploy
 0. Optional: Besseres neuronales Netz einbinden (ist zu groß für GitHub): [Hier herunterladen](https://mega.nz/#!tFE2SI4R!5PUA6G_151mYHQRjni1fDsPlWiAhxHuBN8qF73Dx8eU) und das Verzeichnis `source/neural-net-server/model` ersetzen
 1. source/neural-net-server/serve.py starten 
