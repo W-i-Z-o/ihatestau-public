@@ -83,12 +83,15 @@ public class CameraSpotService {
 
 		e.setLastAlternativeExits(sesce);
 
-		CameraSpotConfigEntity sc = persistenceBean.selectById(CameraSpotConfigEntity.class, config.getSisterId());
-		if (sc == null)
-			throw new WebApplicationException(
-					Response.status(400).entity("Sister cmaera '" + config.getSisterId() + "' not found.").build());
+		if (config.getSisterId() != null) {
+			CameraSpotConfigEntity sc = persistenceBean.selectById(CameraSpotConfigEntity.class, config.getSisterId());
+			if (sc == null)
+				throw new WebApplicationException(
+						Response.status(400).entity("Sister cmaera '" + config.getSisterId() + "' not found.").build());
 
-		e.setSister(sc);
+			e.setSister(sc);
+		}
+
 		e = persistenceBean.merge(e);
 
 		return e.toDTO();

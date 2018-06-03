@@ -38,6 +38,9 @@ public class IHateStauApp {
 	@Parameter(names = { "-help", "-?" }, description = "Shows help about what commands are available")
 	private boolean help = false;
 
+	@Parameter(names = { "-insecure" }, description = "Disables access control")
+	private boolean insecure = false;
+
 	/**
 	 * Starts Grizzly HTTP server exposing JAX-RS resources defined in
 	 * de.tinf15b4.ihatestau.services
@@ -45,10 +48,12 @@ public class IHateStauApp {
 	 * @return Grizzly HTTP server.
 	 */
 	public HttpServer startServer() {
-		final ResourceConfig rc = new ResourceConfig()//
+		ResourceConfig rc = new ResourceConfig()//
 				.packages("de.tinf15b4.ihatestau.rest.services", "de.tinf15b4.ihatestau.rest.exceptions")//
-				.register(JacksonFeature.class)
-				.register(RolesAllowedDynamicFeature.class);
+				.register(JacksonFeature.class);
+
+		if (!insecure)
+			rc = rc.register(RolesAllowedDynamicFeature.class);
 
 		Weld weld = new Weld();
 		weld.initialize();

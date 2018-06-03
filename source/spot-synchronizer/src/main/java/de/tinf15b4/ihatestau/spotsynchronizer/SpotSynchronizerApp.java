@@ -53,8 +53,17 @@ public class SpotSynchronizerApp {
 				logger.error("HTTP " + response.getStatus() + ": " + response.getErrorBody());
 		}
 
-
+		// HACK! need to upload spots without sisters first
 		CameraSpotConfig[] spots = new ObjectMapper().readValue(getClass().getResource("spots.json"),
+				CameraSpotConfig[].class);
+		for (CameraSpotConfig e : spots) {
+			e.setSisterId(null);
+			RestResponse<?> response = client.postJson("/spots", e, null);
+			if (response.hasError())
+				logger.error("HTTP " + response.getStatus() + ": " + response.getErrorBody());
+		}
+
+		spots = new ObjectMapper().readValue(getClass().getResource("spots.json"),
 				CameraSpotConfig[].class);
 		for (CameraSpotConfig e : spots) {
 			RestResponse<?> response = client.postJson("/spots", e, null);

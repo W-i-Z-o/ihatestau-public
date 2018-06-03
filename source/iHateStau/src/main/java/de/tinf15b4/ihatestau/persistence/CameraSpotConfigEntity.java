@@ -105,7 +105,7 @@ public class CameraSpotConfigEntity implements Serializable {
 		return new CameraSpotConfig(id, cameraNameFront, cameraNameBack, name, maskFront, maskBack, cameraLat,
 				cameraLon, street.getName(),
 				lastAlternativeExits.stream().map(ExitSpotConfigEntity::getId).collect(Collectors.toSet()),
-				sister.getId());
+				sister != null ? sister.getId() : null);
 	}
 
 	public void setId(String id) {

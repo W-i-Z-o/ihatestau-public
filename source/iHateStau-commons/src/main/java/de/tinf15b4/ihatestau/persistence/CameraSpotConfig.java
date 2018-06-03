@@ -95,6 +95,10 @@ public class CameraSpotConfig implements Serializable {
 		return sisterId;
 	}
 
+	public void setSisterId(String sisterId) {
+		this.sisterId = sisterId;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
